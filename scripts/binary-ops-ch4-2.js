@@ -83,7 +83,7 @@ else if(btnIndex == 3){
     row.insertCell(0).innerHTML = "1";
     row.insertCell(1).innerHTML = "1";
     row.insertCell(2).innerHTML = "0";
-   $("table").css({"background-color":"#777","color":"white","border-radius":"25px","text-align":"center"});
+   
 }};
 
 function displayNot(){
@@ -99,10 +99,10 @@ function displayNot(){
     var x = Number(row.cells[0].innerHTML);
     row.insertCell(1).innerHTML = 1-x  ;
     }
-    $("table").css({"background-color":"#777","color":"white","border-radius":"25px","text-align":"center"});
+    
 };
 
-     
+     $("table").css({"background-color":"#777","color":"white","border-radius":"25px","text-align":"center"});
 
      $(document).ready(function(){
      $("#btn1").on("click",display);
